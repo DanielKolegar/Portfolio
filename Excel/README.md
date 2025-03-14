@@ -1,7 +1,7 @@
 # 🏒 NHL Statistics Excel Report  
 
 ## 📊 About the Project  
-This Power BI report provides a detailed visualization of NHL player and team statistics.  
+This Excel report provides a detailed visualization of NHL player and team statistics.  
 The report is interactive, allowing users to filter data by team, season, and game type (Regular Season / Playoffs).  
 
 A more detailed project overview is available in the **Introduction** page inside the report.  
@@ -20,15 +20,17 @@ It includes statistics for **skaters, goalies, and teams**, as well as a separat
 ## ⚙️ Technologies Used
 - **Excel** (Data preparation)
 - **Power Query** (Data transformation)
-- **Power BI** (Data visualization & reporting)
-- **DAX** (Calculated measures)
+- **Power Pivot** (Data modeling)
+- **VBA** (Automations)
+- **Conditional Formatting** (Visualization highlights)
 
 ---
 
 ## 📈 Report Overview
 - **Introduction Page**: Contains a detailed project description inside the report. 
-- **Skaters & Goalies Report**: Displays player statistics with interactive filters.
-- **Teams Report**: League standings sorted by points, divided into conferences and divisions.
+- **Skaters Report**: Displays skaters' statistics with interactive filters.
+- **Goalies Report**: Displays goalies' statistics in pivot table with interactive filters.
+- **Teams Report**: League standings in pivot tables sorted by points, divided into conferences and divisions.
 
 ---
 
