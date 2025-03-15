@@ -19,7 +19,7 @@ It includes statistics for **skaters, goalies, and teams**, as well as a separat
 
 ## ⚙️ Technologies Used
 - **Excel** (Data preparation)
-- **Power Query** (Data transformation)
+- **Power Query Editor** (Data transformation)
 - **Power Pivot** (Data modeling)
 - **VBA** (Automations)
 - **Conditional Formatting** (Visualization highlights)
