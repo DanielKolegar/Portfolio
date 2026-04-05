@@ -64,7 +64,7 @@ The database `nhl_db` uses schema `nhl` with the following tables:
 **Teams**
 - Team standings by conference and division
 
-All queries support filters by season, team, position, and more.
+All queries support filters by season, team, etc.
 
 ## 🔄 Ongoing Updates
 This project will be updated after the end of each NHL Regular Season and Playoffs
