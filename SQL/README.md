@@ -13,6 +13,8 @@ The dataset is organized by season, with each season divided into:
 It includes statistics for skaters, goalies, and teams, as well as a separate
 file with team reference data (conference, division).
 
+All CSV files are available in the [data/](data/) folder.
+
 Data source: [NHL](https://www.nhl.com/stats/)
 
 ## ⚙️ Technologies Used
@@ -39,11 +41,11 @@ The database `nhl_db` uses schema `nhl` with the following tables:
 - `teams_regular` / `teams_playoffs` – team statistics
 
 ## 📁 Project Files
-- `1_create_tables.sql` – creates all tables in nhl schema
-- `2_import_data.sql` – imports data from CSV files into the database
-- `queries/skaters.sql` – skater statistics queries
-- `queries/goalies.sql` – goalie statistics queries
-- `queries/teams.sql` – team statistics queries
+- [1_create_tables.sql](1_create_tables.sql) – creates all tables in nhl schema
+- [2_import_data.sql](2_import_data.sql) – imports data from CSV files into the database
+- [queries/skaters.sql](queries/skaters.sql) – skater statistics queries
+- [queries/goalies.sql](queries/goalies.sql) – goalie statistics queries
+- [queries/teams.sql](queries/teams.sql) – team statistics queries
 
 ## 🚀 How to Set Up
 1. Install PostgreSQL and create a database called `nhl_db`
