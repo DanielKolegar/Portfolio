@@ -48,7 +48,7 @@ The database `nhl_db` uses schema `nhl` with the following tables:
 - [queries/teams.sql](queries/teams.sql) – team statistics queries
 
 ## 🚀 How to Set Up
-1. Install PostgreSQL and create a database called `nhl_db`
+1. Install [PostgreSQL](https://www.postgresql.org/download/) and [DBeaver](https://dbeaver.io/download/)
 2. Create schema `nhl` inside `nhl_db`
 3. Run [1_create_tables.sql](1_create_tables.sql) to create all tables
 4. Place [CSV files](data/) in `C:/csv/` and run [2_import_data.sql](2_import_data.sql) to import data
