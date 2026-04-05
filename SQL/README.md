@@ -49,7 +49,14 @@ The database `nhl_db` uses schema `nhl` with the following tables:
 
 ## 🚀 How to Set Up
 1. Install [PostgreSQL](https://www.postgresql.org/download/) and [DBeaver](https://dbeaver.io/download/)
-2. Create schema `nhl` inside `nhl_db`
+2. In DBeaver, connect to PostgreSQL and run the following commands to create the database and schema:
+```sql
+CREATE DATABASE nhl_db;
+```
+Then connect to `nhl_db` and run:
+```sql
+CREATE SCHEMA nhl;
+```
 3. Run [1_create_tables.sql](1_create_tables.sql) to create all tables
 4. Place [CSV files](data/) in `C:/csv/` and run [2_import_data.sql](2_import_data.sql) to import data
 5. Open query files in [queries](queries/) folder and run them in DBeaver
