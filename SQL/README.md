@@ -13,7 +13,7 @@ The dataset is organized by season, with each season divided into:
 It includes statistics for skaters, goalies, and teams, as well as a separate
 file with team reference data (conference, division).
 
-All CSV files are available in the [data/](data/) folder.
+All CSV files are available in the [data](data/) folder.
 
 Data source: [NHL](https://www.nhl.com/stats/)
 
@@ -50,9 +50,9 @@ The database `nhl_db` uses schema `nhl` with the following tables:
 ## 🚀 How to Set Up
 1. Install PostgreSQL and create a database called `nhl_db`
 2. Create schema `nhl` inside `nhl_db`
-3. Run `1_create_tables.sql` to create all tables
-4. Place CSV files in `C:/csv/` and run `2_import_data.sql` to import data
-5. Open query files in `queries/` folder and run them in DBeaver
+3. Run [1_create_tables.sql](1_create_tables.sql) to create all tables
+4. Place [CSV files](data/) in `C:/csv/` and run [2_import_data.sql](2_import_data.sql) to import data
+5. Open query files in [queries](queries/) folder and run them in DBeaver
 
 ## 📈 Queries Overview
 **Skaters**
