@@ -73,6 +73,7 @@ COPY temp_skaters FROM 'C:\csv\2023_2024_regular_skaters.csv' WITH (FORMAT CSV, 
 COPY temp_skaters FROM 'C:\csv\2023_2024_playoffs_skaters.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 COPY temp_skaters FROM 'C:\csv\2024_2025_regular_skaters.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 COPY temp_skaters FROM 'C:\csv\2024_2025_playoffs_skaters.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
+COPY temp_skaters FROM 'C:\csv\2025_2026_regular_skaters.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 
 
 -- --------------------------------------------
@@ -152,6 +153,7 @@ COPY temp_goalies FROM 'C:\csv\2021_2022_regular_goalies.csv' WITH (FORMAT CSV, 
 COPY temp_goalies FROM 'C:\csv\2022_2023_regular_goalies.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 COPY temp_goalies FROM 'C:\csv\2023_2024_regular_goalies.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 COPY temp_goalies FROM 'C:\csv\2024_2025_regular_goalies.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
+COPY temp_goalies FROM 'C:\csv\2025_2026_regular_goalies.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 
 -- playoffs goalies CSV does not have OT column
 CREATE TEMPORARY TABLE temp_goalies_playoffs (
@@ -424,6 +426,7 @@ COPY temp_teams_regular FROM 'C:\csv\2021_2022_regular_teams.csv' WITH (FORMAT C
 COPY temp_teams_regular FROM 'C:\csv\2022_2023_regular_teams.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 COPY temp_teams_regular FROM 'C:\csv\2023_2024_regular_teams.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 COPY temp_teams_regular FROM 'C:\csv\2024_2025_regular_teams.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
+COPY temp_teams_regular FROM 'C:\csv\2025_2026_regular_teams.csv' WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 
 CREATE TEMPORARY TABLE temp_teams_playoffs (
     team          VARCHAR(50),    -- full team name, e.g. "Anaheim Ducks"
