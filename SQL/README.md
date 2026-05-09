@@ -13,7 +13,8 @@ The dataset is organized by season, with each season divided into:
 It includes statistics for skaters, goalies, and teams, as well as a separate
 file with team reference data (conference, division).
 
-All CSV files are available in the [data](data/) folder.
+All CSV files are available in the [data/](data/) folder or as a single
+[data.zip](data/data.zip) download.
 
 Data source: [NHL](https://www.nhl.com/stats/)
 
@@ -59,7 +60,7 @@ CREATE SCHEMA nhl;
 ```
 3. Run [1_create_tables.sql](1_create_tables.sql) to create all tables
 4. Download [data.zip](data/data.zip), extract it to `C:/` so that CSV files
-   are located in `C:/csv/`, then run `2_import_data.sql` to import data
+   are located in `C:/csv/`, then run [2_import_data.sql](2_import_data.sql) to import data
 5. Open query files in [queries](queries/) folder and run them in DBeaver
 
 ## 📈 Queries Overview
