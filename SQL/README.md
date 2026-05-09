@@ -58,7 +58,8 @@ Then connect to `nhl_db` and run:
 CREATE SCHEMA nhl;
 ```
 3. Run [1_create_tables.sql](1_create_tables.sql) to create all tables
-4. Place [CSV files](data/) in `C:/csv/` and run [2_import_data.sql](2_import_data.sql) to import data
+4. Download [data.zip](data/data.zip), extract it to `C:/` so that CSV files
+   are located in `C:/csv/`, then run `2_import_data.sql` to import data
 5. Open query files in [queries](queries/) folder and run them in DBeaver
 
 ## 📈 Queries Overview
