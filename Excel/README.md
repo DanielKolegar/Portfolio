@@ -13,18 +13,22 @@ A more detailed project overview is available in the **Introduction** page insid
 
 ## 📂 Repository Structure
 
-For the workbook to refresh correctly, all files must be kept in the **same folder**:
+For the workbook to refresh correctly, the folder structure must match exactly:
 
 ```
 NHL-Statistics/
-├── NHL_Statistics.xlsm        ← Main workbook (macros enabled)
-├── 2021_2022_regular.xlsx     ← Source data – Regular Season
-├── 2021_2022_playoffs.xlsx    ← Source data – Playoffs
-└── Teams_Reference.xlsx       ← Team metadata (names, conferences, divisions)
+├── NHL_Statistics.xlsm               ← Main workbook (macros enabled)
+└── Data/
+    ├── xlsx/
+    │   ├── 2021_2022_regular.xlsx    ← Source data – Regular Season
+    │   ├── 2021_2022_playoffs.xlsx   ← Source data – Playoffs
+    │   └── ...                       ← Future seasons go here
+    └── Reference/
+        └── Teams_Reference.xlsx      ← Team metadata (names, conferences, divisions)
 ```
 
-> 📌 **Do not move source files into subfolders.** Power Query resolves paths
-> relative to the workbook location — all files must sit in the same directory.
+> 📌 **Do not change this folder structure.** Power Query resolves all paths
+> relative to the workbook location — moving files will break the data refresh.
 
 ---
 
@@ -67,8 +71,19 @@ in
     FolderPath & "\"
 ```
 
-Each data query then references `WorkbookPath` instead of a hardcoded drive letter,
-so the workbook works on any machine without any manual path changes after cloning.
+Each data query then appends the correct subfolder:
+
+```m
+// Example – Regular Season data
+Source = Excel.Workbook(
+    File.Contents(WorkbookPath & "Data\xlsx\2021_2022_regular.xlsx"), true
+)
+
+// Example – Teams Reference
+Source = Excel.Workbook(
+    File.Contents(WorkbookPath & "Data\Reference\Teams_Reference.xlsx"), true
+)
+```
 
 ---
 
