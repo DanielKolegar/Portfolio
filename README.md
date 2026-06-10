@@ -2,7 +2,8 @@
 
 This repository showcases my work in data analysis. Currently, it includes projects in:
 
-- [Power BI](https://github.com/DanielKolegar/Portfolio/tree/main/PowerBI)
-- [SQL](https://github.com/DanielKolegar/Portfolio/tree/main/SQL)
+- [Power BI](PowerBI)
+- [Excel](Excel)
+- [SQL](SQL)
 
 More projects and updates will be added over time.
