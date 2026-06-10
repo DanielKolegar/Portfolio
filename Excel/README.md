@@ -14,7 +14,7 @@ A more detailed project overview is available in the **Introduction** page insid
 For the workbook to refresh correctly, the folder structure must match exactly:
 
 ```
-NHL-Statistics/
+Portfolio/
 ├── NHL_Statistics.xlsm               ← Main workbook (macros enabled)
 └── Data/
     ├── xlsx/
@@ -62,13 +62,13 @@ It includes statistics for **skaters, goalies, and teams**, as well as a separat
 ## 🚀 Getting Started
 
 ### Option A – Full project (recommended)
-1. Download **NHL_Statistics.zip**
+1. Download [NHL_Statistics.zip](NHL_Statistics.zip)
 2. Extract it — keep the folder structure intact
 3. Open `NHL_Statistics.xlsm` and click **Enable Content**
 4. Click **Refresh Data** on the Introduction sheet
 
 ### Option B – Workbook only
-Download `NHL_Statistics.xlsm` standalone.
+Download [NHL_Statistics.xlsm](NHL_Statistics.xlsm) standalone.
 > ⚠️ Data refresh will not work without the source files.
 > Reports are visible but cannot be updated.
 
