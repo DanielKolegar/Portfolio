@@ -14,15 +14,16 @@ A more detailed project overview is available in the **Introduction** page insid
 For the workbook to refresh correctly, the folder structure must match exactly:
 
 ```
-Portfolio/
-├── NHL_Statistics.xlsm               ← Main workbook (macros enabled)
-└── Data/
-    ├── xlsx/
-    │   ├── 2021_2022_regular.xlsx    ← Source data – Regular Season
-    │   ├── 2021_2022_playoffs.xlsx   ← Source data – Playoffs
-    │   └── ...                       ← Future seasons go here
-    └── Reference/
-        └── Teams_Reference.xlsx      ← Team metadata (names, conferences, divisions)
+C:/
+└── Portfolio/
+    ├── NHL_Statistics.xlsm               ← Main workbook (macros enabled)
+    └── Data/
+        ├── xlsx/
+        │   ├── 2021_2022_regular.xlsx    ← Source data – Regular Season
+        │   ├── 2021_2022_playoffs.xlsx   ← Source data – Playoffs
+        │   └── ...                       ← Future seasons go here
+        └── Reference/
+            └── Teams_Reference.xlsx      ← Team metadata (names, conferences, divisions)
 ```
 
 > 📌 **Do not change this folder structure.** Power Query resolves all paths
